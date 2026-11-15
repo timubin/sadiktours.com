@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadik Tours &amp; Travels | sadiktours.com — আন্তর্জাতিক ট্যুর প্যাকেজ, ভিসা ও এয়ার টিকেট</title>
+  <meta
+    name="description"
+    content="সাদিক ট্যুরস অ্যান্ড ট্রাভেলস (sadiktours.com) — আন্তর্জাতিক ট্যুর প্যাকেজ, এয়ার টিকেট, ভিসা প্রসেসিং এবং ওমরাহ প্যাকেজের বিশ্বস্ত প্রতিষ্ঠান।"
+  />
+
+  <!-- Google Fonts: Hind Siliguri (Bengali) & Plus Jakarta Sans (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome 6 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          হটলাইন: +880 1700-000000
+        </span>
+        <span class="top-bar-item">
+          <i class="fa-solid fa-envelope"></i>
+          info@sadiktours.com
+        </span>
+        <span class="top-bar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          ঢাকা, বাংলাদেশ
+        </span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-badge">
+          <i class="fa-solid fa-shield-check"></i> ৯৮% ভিসা সাকসেস রেট
+        </span>
+        <span class="top-bar-item">
+          <i class="fa-regular fa-clock"></i> শনি - বৃহঃ (সকাল ১০টা - রাত ৮টা)
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-plane-departure"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">sadik<span>tours.com</span></span>
+          <span class="brand-tagline">আন্তর্জাতিক ট্যুর, ভিসা ও এয়ার টিকেটিং</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#packages">ট্যুর প্যাকেজ</a>
+        <a href="#services">সেবাসমূহ</a>
+        <a href="#visa">ভিসা প্রসেসিং</a>
+        <a href="#why-us">কেন আমরা?</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+8801700000000" class="btn btn-outline">
+          <i class="fa-solid fa-phone"></i> কল করুন
+        </a>
+        <button class="btn btn-primary" onclick="openBookingModal('কাস্টম ট্যুর / ভিসা কনসালটেশন')">
+          <i class="fa-regular fa-paper-plane"></i> বুকিং করুন
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="assets/hero-travel.jpg" alt="বিশ্ব ভ্রমণ - সাদিক ট্যুরস" class="hero-bg" />
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-grid">
+      <!-- Left Column: Main Headline & CTAs -->
+      <div class="hero-content">
+        <div class="hero-pill">
+          <i class="fa-solid fa-award"></i>
+          বাংলাদেশের বিশ্বস্ত আন্তর্জাতিক ট্রাভেল এজেন্সি
+        </div>
+        <h1>
+          স্বপ্নের গন্তব্যে নির্ভার যাত্রা — <span>সাদিক ট্যুরস</span>-এর সাথে
+        </h1>
+        <p>
+          দুবাই, মালদ্বীপ, থাইল্যান্ড, ইউরোপ কিংবা পবিত্র ওমরাহ — প্রিমিয়াম ট্যুর প্যাকেজ, দ্রুত ভিসা প্রসেসিং এবং সাশ্রয়ী এয়ার টিকেটের সম্পূর্ণ সমাধান এখন এক ছাদের নিচে।
+        </p>
+
+        <div class="hero-highlights">
+          <span><i class="fa-solid fa-circle-check"></i> ৯৮% ভিসা সাকসেস</span>
+          <span><i class="fa-solid fa-circle-check"></i> কোনো হিডেন চার্জ নেই</span>
+          <span><i class="fa-solid fa-circle-check"></i> ২৪/৭ ট্রাভেল সাপোর্ট</span>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#packages" class="btn btn-primary">
+            <i class="fa-solid fa-compass"></i> জনপ্রিয় প্যাকেজ দেখুন
+          </a>
+          <a
+            href="https://wa.me/8801700000000?text=আসসালামু%20আলাইকুম%2C%20আমি%20ট্যুর%20প্যাকেজ%20ও%20ভিসা%20সম্পর্কে%20জানতে%20চাই।"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-hero-secondary"
+          >
+            <i class="fa-brands fa-whatsapp"></i> সরাসরি হোয়াটসঅ্যাপ করুন
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Organized Featured Deals Card -->
+      <div class="hero-deals-card">
+        <div class="hero-deals-header">
+          <div>
+            <span class="deals-tag">🔥 চলতি মাসের সেরা অফার</span>
+            <h3>জনপ্রিয় হট প্যাকেজসমূহ</h3>
+          </div>
+          <span class="deals-rating"><i class="fa-solid fa-star"></i> ৪.৯/৫</span>
+        </div>
+
+        <div class="hero-deals-list">
+          <div class="hero-deal-item" onclick="openBookingModal('দুবাই লাক্সারি ট্যুর (৪ রাত/৫ দিন - ৳ ৯৫,০০০)')">
+            <div class="deal-info">
+              <span class="deal-flag">🇦🇪</span>
+              <div>
+                <h4>দুবাই ও ডেজার্ট সাফারি</h4>
+                <p>৪ রাত / ৫ দিন • ফ্লাইট + হোটেল + ভিসা</p>
+              </div>
+            </div>
+            <div class="deal-price">
+              <strong>৳ ৯৫,০০০</strong>
+              <span>বুক করুন <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <div class="hero-deal-item" onclick="openBookingModal('মালদ্বীপ ওয়াটার ভিলা প্যাকেজ (৩ রাত/৪ দিন - ৳ ৭৮,০০০)')">
+            <div class="deal-info">
+              <span class="deal-flag">🇲🇻</span>
+              <div>
+                <h4>মালদ্বীপ হানিমুন ও রিসোর্ট</h4>
+                <p>৩ রাত / ৪ দিন • ফ্লাইট + রিসোর্ট + ব্রেকফাস্ট</p>
+              </div>
+            </div>
+            <div class="deal-price">
+              <strong>৳ ৭৮,০০০</strong>
+              <span>বুক করুন <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <div class="hero-deal-item" onclick="openBookingModal('প্রিমিয়াম ১৪ দিনের ওমরাহ প্যাকেজ (৳ ১,৪৫,০০০)')">
+            <div class="deal-info">
+              <span class="deal-flag">🇸🇦</span>
+              <div>
+                <h4>পবিত্র ওমরাহ ভিআইপি প্যাকেজ</h4>
+                <p>১৪ দিন • ডিরেক্ট ফ্লাইট + হারাম ভিউ হোটেল</p>
+              </div>
+            </div>
+            <div class="deal-price">
+              <strong>৳ ১,৪৫,০০০</strong>
+              <span>বুক করুন <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#visa" class="hero-deals-footer">
+          <span><i class="fa-solid fa-passport"></i> মাত্র ৩-৫ দিনে দুবাই, থাইল্যান্ড ও মালয়েশিয়া ভিসা</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Quick Inquiry / Search Bar -->
+  <div class="container search-bar-wrapper">
+    <div class="search-card">
+      <form class="search-form" id="quickSearchForm">
+        <div class="form-group">
+          <label for="searchDest"><i class="fa-solid fa-location-dot"></i> কোথায় যেতে চান?</label>
+          <select id="searchDest" class="form-control">
+            <option value="দুবাই ও আবুধাবি">দুবাই ও আবুধাবি</option>
+            <option value="মালদ্বীপ (হানিমুন/রিসোর্ট)">মালদ্বীপ (হানিমুন/রিসোর্ট)</option>
+            <option value="থাইল্যান্ড (ব্যাংকক ও ফুকেট)">থাইল্যান্ড (ব্যাংকক ও ফুকেট)</option>
+            <option value="মালয়েশিয়া ও সিঙ্গাপুর">মালয়েশিয়া ও সিঙ্গাপুর</option>
+            <option value="সুইজারল্যান্ড ও ইউরোপ">সুইজারল্যান্ড ও ইউরোপ</option>
+            <option value="পবিত্র ওমরাহ প্যাকেজ">পবিত্র ওমরাহ প্যাকেজ</option>
+            <option value="তুরস্ক / মিশর">তুরস্ক / মিশর</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="searchService"><i class="fa-solid fa-suitcase-rolling"></i> সেবার ধরণ</label>
+          <select id="searchService" class="form-control">
+            <option value="সম্পূর্ণ ট্যুর প্যাকেজ">সম্পূর্ণ ট্যুর প্যাকেজ</option>
+            <option value="শুধুমাত্র ভিসা প্রসেসিং">শুধুমাত্র ভিসা প্রসেসিং</option>
+            <option value="এয়ার টিকেট বুকিং">এয়ার টিকেট বুকিং</option>
+            <option value="কাস্টম ফ্যামিলি / কর্পোরেট ট্যুর">কাস্টম ফ্যামিলি / কর্পোরেট ট্যুর</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="searchDate"><i class="fa-regular fa-calendar"></i> সম্ভাব্য তারিখ</label>
+          <input type="date" id="searchDate" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="searchPersons"><i class="fa-solid fa-users"></i> যাত্রী সংখ্যা</label>
+          <select id="searchPersons" class="form-control">
+            <option value="১ জন">১ জন</option>
+            <option value="২ জন (কাপল)" selected>২ জন (কাপল)</option>
+            <option value="৩ - ৫ জন (পরিবার)">৩ - ৫ জন (পরিবার)</option>
+            <option value="৬+ জন (গ্রুপ ট্যুর)">৬+ জন (গ্রুপ ট্যুর)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="height: 46px; padding: 0 28px;">
+          <i class="fa-solid fa-magnifying-glass"></i> কোটেশন নিন
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Trust Stats Strip -->
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-box">
+        <div class="stat-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+        <div class="stat-info">
+          <h3>৫,০০০+</h3>
+          <p>সন্তুষ্ট ভ্রমণকারী</p>
+        </div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon"><i class="fa-solid fa-passport"></i></div>
+        <div class="stat-info">
+          <h3>৯৮%</h3>
+          <p>ভিসা অ্যাপ্রুভাল রেট</p>
+        </div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon"><i class="fa-solid fa-earth-asia"></i></div>
+        <div class="stat-info">
+          <h3>২৫+</h3>
+          <p>আন্তর্জাতিক গন্তব্য</p>
+        </div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon"><i class="fa-solid fa-headset"></i></div>
+        <div class="stat-info">
+          <h3>২৪/৭</h3>
+          <p>জরুরি ট্রাভেল সাপোর্ট</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Tour Packages -->
+  <section class="section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">টপ ডেস্টিনেশন ২০২৬</span>
+        <h2>জনপ্রিয় আন্তর্জাতিক ট্যুর প্যাকেজসমূহ</h2>
+        <p>আপনার বাজেট ও পছন্দ অনুযায়ী সেরা হোটেল, রিটার্ন এয়ার টিকেট এবং গাইড সহ কিউরেটেড ট্যুর প্যাকেজ।</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">সবগুলো প্যাকেজ</button>
+        <button class="filter-btn" data-filter="asia">এশিয়া</button>
+        <button class="filter-btn" data-filter="middle-east">মিডল ইস্ট</button>
+        <button class="filter-btn" data-filter="honeymoon">হানিমুন</button>
+        <button class="filter-btn" data-filter="europe">ইউরোপ</button>
+        <button class="filter-btn" data-filter="umrah">ওমরাহ</button>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1: Dubai -->
+        <article class="pkg-card" data-category="middle-east">
+          <div class="pkg-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" onerror="this.onerror=null;this.src='assets/hero-travel.jpg';" alt="দুবাই লাক্সারি ট্যুর" />
+            <span class="pkg-badge">বেস্ট সেলার</span>
+            <span class="pkg-duration">৪ রাত / ৫ দিন</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-location"><i class="fa-solid fa-location-dot"></i> দুবাই, সংযুক্ত আরব আমিরাত</div>
+            <h3 class="pkg-title">দুবাই মিরাকল ও ডেজার্ট সাফারি লাক্সারি ট্যুর</h3>
+            <p class="pkg-desc">বুর্জ খলিফা, ডেজার্ট সাফারি ডিনার, ধো ক্রুজ এবং আবুধাবি সিটি ট্যুর সহ কমপ্লিট প্যাকেজ।</p>
+            <div class="pkg-inclusions">
+              <span class="inc-chip"><i class="fa-solid fa-plane"></i> রিটার্ন টিকেট</span>
+              <span class="inc-chip"><i class="fa-solid fa-hotel"></i> ৪-স্টার হোটেল</span>
+              <span class="inc-chip"><i class="fa-solid fa-passport"></i> ভিসা</span>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <span class="pkg-price-label">জনপ্রতি শুরু</span>
+                <span class="pkg-price">৳ ৯৫,০০০</span>
+              </div>
+              <button class="btn btn-navy" onclick="openBookingModal('দুবাই লাক্সারি ট্যুর (৪ রাত/৫ দিন - ৳ ৯৫,০০০)')">
+                বুকিং করুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 2: Maldives -->
+        <article class="pkg-card" data-category="asia honeymoon">
+          <div class="pkg-img-wrap">
+            <img src="assets/pkg-maldives.jpg" alt="মালদ্বীপ হানিমুন প্যাকেজ" />
+            <span class="pkg-badge">হানিমুন স্পেশাল</span>
+            <span class="pkg-duration">৩ রাত / ৪ দিন</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-location"><i class="fa-solid fa-location-dot"></i> মাফুশি ও প্রাইভেট রিসোর্ট, মালদ্বীপ</div>
+            <h3 class="pkg-title">মালদ্বীপ ওয়াটার ভিলা ও আইল্যান্ড হপিং</h3>
+            <p class="pkg-desc">স্বচ্ছ নীল সমুদ্র, স্পিডবোট ট্রান্সফার, স্নোরকেলিং এবং ক্যান্ডেললাইট ডিনার সহ রোমান্টিক ট্যুর।</p>
+            <div class="pkg-inclusions">
+              <span class="inc-chip"><i class="fa-solid fa-plane"></i> এয়ার টিকেট</span>
+              <span class="inc-chip"><i class="fa-solid fa-umbrella-beach"></i> বিচ রিসোর্ট</span>
+              <span class="inc-chip"><i class="fa-solid fa-utensils"></i> ব্রেকফাস্ট</span>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <span class="pkg-price-label">জনপ্রতি শুরু</span>
+                <span class="pkg-price">৳ ৭৮,০০০</span>
+              </div>
+              <button class="btn btn-navy" onclick="openBookingModal('মালদ্বীপ ওয়াটার ভিলা প্যাকেজ (৩ রাত/৪ দিন - ৳ ৭৮,০০০)')">
+                বুকিং করুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 3: Thailand -->
+        <article class="pkg-card" data-category="asia honeymoon">
+          <div class="pkg-img-wrap">
+            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80" onerror="this.onerror=null;this.src='assets/pkg-maldives.jpg';" alt="থাইল্যান্ড ব্যাংকক ও ফুকেট" />
+            <span class="pkg-badge">ফ্যামিলি ফেভারিট</span>
+            <span class="pkg-duration">৫ রাত / ৬ দিন</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-location"><i class="fa-solid fa-location-dot"></i> ব্যাংকক, পাতায়া ও ফুকেট, থাইল্যান্ড</div>
+            <h3 class="pkg-title">থাইল্যান্ড ব্যাংকক ও ফি-ফি আইল্যান্ড এক্সপ্লোরার</h3>
+            <p class="pkg-desc">কোরাল আইল্যান্ড, সাফারি ওয়ার্ল্ড, ফি-ফি আইল্যান্ড স্পিডবোট ট্যুর এবং শপিংয়ের সেরা সুযোগ।</p>
+            <div class="pkg-inclusions">
+              <span class="inc-chip"><i class="fa-solid fa-plane"></i> রিটার্ন টিকেট</span>
+              <span class="inc-chip"><i class="fa-solid fa-hotel"></i> ৩/৪-স্টার হোটেল</span>
+              <span class="inc-chip"><i class="fa-solid fa-van-shuttle"></i> ট্রান্সফার</span>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <span class="pkg-price-label">জনপ্রতি শুরু</span>
+                <span class="pkg-price">৳ ৬২,০০০</span>
+              </div>
+              <button class="btn btn-navy" onclick="openBookingModal('থাইল্যান্ড ব্যাংকক ও ফুকেট ট্যুর (৫ রাত/৬ দিন - ৳ ৬২,০০০)')">
+                বুকিং করুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 4: Switzerland / Europe -->
+        <article class="pkg-card" data-category="europe">
+          <div class="pkg-img-wrap">
+            <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=900&q=80" onerror="this.onerror=null;this.src='assets/hero-travel.jpg';" alt="সুইজারল্যান্ড ও প্যারিস ইউরোপ ট্যুর" />
+            <span class="pkg-badge">প্রিমিয়াম ইউরোপ</span>
+            <span class="pkg-duration">৭ রাত / ৮ দিন</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-location"><i class="fa-solid fa-location-dot"></i> জুরিখ, ইন্টারলাকেন ও প্যারিস</div>
+            <h3 class="pkg-title">সুইস আল্পস ও প্যারিস শেনজেন ড্রিম ট্যুর</h3>
+            <p class="pkg-desc">মাউন্ট টিটলিস, লুসার্ন লেক, আইফেল টাওয়ার এবং শেনজেন ভিসা ফাইল প্রসেসিং সহ সম্পূর্ণ গাইডেড ট্যুর।</p>
+            <div class="pkg-inclusions">
+              <span class="inc-chip"><i class="fa-solid fa-train"></i> ইউরো রেল</span>
+              <span class="inc-chip"><i class="fa-solid fa-hotel"></i> ৪-স্টার হোটেল</span>
+              <span class="inc-chip"><i class="fa-solid fa-passport"></i> ভিসা সাপোর্ট</span>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <span class="pkg-price-label">জনপ্রতি শুরু</span>
+                <span class="pkg-price">৳ ২,৮৫,০০০</span>
+              </div>
+              <button class="btn btn-navy" onclick="openBookingModal('সুইস আল্পস ও প্যারিস ইউরোপ ট্যুর (৭ রাত/৮ দিন - ৳ ২,৮৫,০০০)')">
+                বুকিং করুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 5: Umrah -->
+        <article class="pkg-card" data-category="middle-east umrah">
+          <div class="pkg-img-wrap">
+            <img src="assets/pkg-umrah.jpg" alt="পবিত্র ওমরাহ প্যাকেজ" />
+            <span class="pkg-badge">ভিআইপি ওমরাহ</span>
+            <span class="pkg-duration">১৪ দিন</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-location"><i class="fa-solid fa-location-dot"></i> মক্কা ও মদিনা, সৌদি আরব</div>
+            <h3 class="pkg-title">প্রিমিয়াম ১৪ দিনের পবিত্র ওমরাহ প্যাকেজ</h3>
+            <p class="pkg-desc">হারাম শরিফের খুব কাছে হোটেল, ডিরেক্ট ফ্লাইট, অভিজ্ঞ মোয়াল্লেম দ্বারা জিয়ারত ও পরিবহন সুবিধা।</p>
+            <div class="pkg-inclusions">
+              <span class="inc-chip"><i class="fa-solid fa-plane"></i> ডিরেক্ট ফ্লাইট</span>
+              <span class="inc-chip"><i class="fa-solid fa-mosque"></i> হারাম ভিউ হোটেল</span>
+              <span class="inc-chip"><i class="fa-solid fa-passport"></i> ওমরাহ ভিসা</span>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <span class="pkg-price-label">জনপ্রতি শুরু</span>
+                <span class="pkg-price">৳ ১,৪৫,০০০</span>
+              </div>
+              <button class="btn btn-navy" onclick="openBookingModal('প্রিমিয়াম ১৪ দিনের ওমরাহ প্যাকেজ (৳ ১,৪৫,০০০)')">
+                বুকিং করুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package 6: Malaysia & Singapore -->
+        <article class="pkg-card" data-category="asia">
+          <div class="pkg-img-wrap">
+            <img src="assets/hero-travel.jpg" alt="মালয়েশিয়া ও সিঙ্গাপুর কম্বো ট্যুর" />
+            <span class="pkg-badge">টু-কান্ট্রি কম্বো</span>
+            <span class="pkg-duration">৬ রাত / ৭ দিন</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-location"><i class="fa-solid fa-location-dot"></i> কুয়ালালামপুর ও সিঙ্গাপুর</div>
+            <h3 class="pkg-title">মালয়েশিয়া ও সিঙ্গাপুর ফ্যামিলি কম্বো ট্যুর</h3>
+            <p class="pkg-desc">টুইন টাওয়ার, গেন্টিং হাইল্যান্ড, মেরিনা বে স্যান্ডস ও ইউনিভার্সাল স্টুডিও ভ্রমণ এক প্যাকেজেই।</p>
+            <div class="pkg-inclusions">
+              <span class="inc-chip"><i class="fa-solid fa-plane"></i> এয়ার টিকেট</span>
+              <span class="inc-chip"><i class="fa-solid fa-bus"></i> লাক্সারি কোচ</span>
+              <span class="inc-chip"><i class="fa-solid fa-passport"></i> ২ দেশের ভিসা</span>
+            </div>
+            <div class="pkg-footer">
+              <div>
+                <span class="pkg-price-label">জনপ্রতি শুরু</span>
+                <span class="pkg-price">৳ ৯৮,০০০</span>
+              </div>
+              <button class="btn btn-navy" onclick="openBookingModal('মালয়েশিয়া ও সিঙ্গাপুর কম্বো ট্যুর (৬ রাত/৭ দিন - ৳ ৯৮,০০০)')">
+                বুকিং করুন
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">আমাদের সেবাসমূহ</span>
+        <h2>এক ছাদের নিচে সম্পূর্ণ ট্রাভেল সলিউশন</h2>
+        <p>ব্যক্তিগত ভ্রমণ, ফ্যামিলি হলিডে কিংবা কর্পোরেট ট্যুর — প্রতিটি ধাপে আমরা নিশ্চিত করি সর্বোচ্চ পেশাদারিত্ব।</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-earth-americas"></i></div>
+          <h3>আন্তর্জাতিক ট্যুর প্যাকেজ</h3>
+          <p>বিশ্বের ২৫+ দেশে গ্রুপ ও কাস্টমাইজড ট্যুর প্যাকেজ। আপনার বাজেট অনুযায়ী সম্পূর্ণ ট্যুর প্ল্যানিং।</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-stamp"></i></div>
+          <h3>ভিসা প্রসেসিং সার্ভিস</h3>
+          <p>ট্যুরিস্ট, বিজনেস ও মেডিকেল ভিসার নির্ভুল ফাইল প্রসেসিং এবং ৯৮% অ্যাপ্রুভাল সাকসেস রেট।</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-ticket"></i></div>
+          <h3>সাশ্রয়ী এয়ার টিকেটিং</h3>
+          <p>সব এয়ারলাইন্সের ডোমেস্টিক ও ইন্টারন্যাশনাল ফ্লাইটের রিয়েল-টাইম বেস্ট ফেয়ার ও ইনস্ট্যান্ট ইস্যু।</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-hotel"></i></div>
+          <h3>হোটেল ও এয়ারপোর্ট পিকআপ</h3>
+          <p>সারা বিশ্বে ৩-স্টার থেকে ৫-স্টার হোটেল বুকিং এবং এয়ারপোর্ট পিকআপ-ড্রপ অফ সুবিধা।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Visa Assistance Section -->
+  <section class="section" id="visa">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ভিসা গাইড ও প্রসেসিং</span>
+        <h2>জনপ্রিয় দেশগুলোর ভিসা তথ্য ও ডকুমেন্টস</h2>
+        <p>কোন দেশের ভিসার জন্য কী কী কাগজপত্র লাগবে তা নিচের তালিকা থেকে সিলেক্ট করে এক নজরে দেখে নিন।</p>
+      </div>
+
+      <div class="visa-wrapper">
+        <div class="visa-countries">
+          <button class="visa-country-btn active" data-country="dubai">
+            <span>🇦🇪 দুবাই (UAE ই-ভিসা)</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="visa-country-btn" data-country="thailand">
+            <span>🇹🇭 থাইল্যান্ড ট্যুরিস্ট ভিসা</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="visa-country-btn" data-country="malaysia">
+            <span>🇲🇾 মালয়েশিয়া ই-ভিসা</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="visa-country-btn" data-country="singapore">
+            <span>🇸🇬 সিঙ্গাপুর ই-ভিসা</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="visa-country-btn" data-country="schengen">
+            <span>🇪🇺 শেনজেন / ইউরোপ ভিসা</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="visa-country-btn" data-country="turkey">
+            <span>🇹🇷 তুরস্ক ট্যুরিস্ট ভিসা</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="visa-detail-card" id="visaDetailBox">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Sadik Tours -->
+  <section class="section section-alt" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">কেন সাদিক ট্যুরস?</span>
+        <h2>হাজারো ভ্রমণকারীর আস্থার কারণ</h2>
+        <p>আমরা শুধু প্যাকেজ বিক্রি করি না, আপনার প্রতিটি ভ্রমণকে নিরাপদ ও স্মরণীয় করে তুলতে পাশে থাকি।</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <h3>শতভাগ স্বচ্ছ মূল্য (No Hidden Cost)</h3>
+          <p>প্যাকেজে যা উল্লেখ থাকবে, এর বাইরে কোনো অপ্রত্যাশিত বা গোপন চার্জ নেওয়া হয় না।</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <h3>অভিজ্ঞ ভিসা কনসালটেন্ট</h3>
+          <p>আমাদের এক্সপার্ট টিম আপনার ডকুমেন্টস যাচাই করে ফাইল প্রস্তুত করে যাতে ভিসা রিজেকশন ঝুঁকি সর্বনিম্ন থাকে।</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <h3>সার্বক্ষণিক ট্রাভেল সাপোর্ট</h3>
+          <p>বিদেশ ভ্রমণের সময় যেকোনো ফ্লাইট শিডিউল পরিবর্তন বা হোটেল সহায়তায় আমাদের টিম ২৪/৭ অ্যাক্টিভ থাকে।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">গ্রাহকদের অভিজ্ঞতা</span>
+        <h2>আমাদের সাথে ভ্রমণকারীদের মতামত</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "সাদিক ট্যুরসের মাধ্যমে পরিবারের ৫ জন নিয়ে দুবাই ঘুরে আসলাম। ভিসা থেকে শুরু করে হোটেল ও ডেজার্ট সাফারি — সব ব্যবস্থাপনাই ছিল চমৎকার।"
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">রা</div>
+            <div>
+              <h4>রাশেদুল ইসলাম</h4>
+              <span>দুবাই ফ্যামিলি ট্যুর</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "আমাদের হানিমুনের জন্য মালদ্বীপ প্যাকেজটি নিয়েছিলাম। বাজেটের মধ্যে অসাধারণ রিসোর্ট এবং সময়মতো স্পিডবোট ট্রান্সফার পেয়েছি।"
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">তা</div>
+            <div>
+              <h4>তানভীর ও নুসরাত</h4>
+              <span>মালদ্বীপ হানিমুন প্যাকেজ</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "অন্য জায়গায় শেনজেন ভিসা নিয়ে চিন্তায় ছিলাম, কিন্তু সাদিক ট্যুরসের গাইডলাইনে প্রথম চেষ্টাতেই আমার ও স্ত্রীর ভিসা হয়ে গেছে।"
+          </p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">মা</div>
+            <div>
+              <h4>মাহমুদুল হাসান</h4>
+              <span>ইউরোপ ভিসা ও ট্যুর</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct CTA Banner -->
+  <section class="section" style="padding-top: 10px;" id="contact">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2>আপনার পরবর্তী ভ্রমণ পরিকল্পনা করতে প্রস্তুত?</h2>
+          <p>
+            এখনই আমাদের ট্রাভেল এক্সপার্টের সাথে কথা বলুন এবং আপনার বাজেট অনুযায়ী সেরা ট্যুর প্যাকেজ বা এয়ার টিকেটের কোটেশন নিন।
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+8801700000000" class="btn btn-primary">
+            <i class="fa-solid fa-phone"></i> +880 1700-000000
+          </a>
+          <a
+            href="https://wa.me/8801700000000?text=আসসালামু%20আলাইকুম%2C%20আমি%20sadiktours.com%20থেকে%20যোগাযোগ%20করছি।"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-whatsapp"
+          >
+            <i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপ চ্যাট
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon">
+              <i class="fa-solid fa-plane-departure"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">sadik<span>tours.com</span></span>
+              <span class="brand-tagline" style="color: rgba(255,255,255,0.6);">Sadik Tours &amp; Travels</span>
+            </div>
+          </div>
+          <p>
+            আন্তর্জাতিক ট্যুর প্যাকেজ, এয়ার টিকেটিং, ভিসা প্রসেসিং এবং পবিত্র ওমরাহ সেবার একটি বিশ্বস্ত ও আধুনিক ট্রাভেল এজেন্সি।
+          </p>
+        </div>
+
+        <div>
+          <h4>গুরুত্বপূর্ণ লিংক</h4>
+          <ul class="footer-links">
+            <li><a href="#packages">জনপ্রিয় ট্যুর প্যাকেজ</a></li>
+            <li><a href="#services">আমাদের সেবাসমূহ</a></li>
+            <li><a href="#visa">ভিসা রিকোয়ারমেন্টস</a></li>
+            <li><a href="#why-us">কেন সাদিক ট্যুরস</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>জনপ্রিয় গন্তব্য</h4>
+          <ul class="footer-links">
+            <li><a href="#packages">দুবাই ট্যুর প্যাকেজ</a></li>
+            <li><a href="#packages">মালদ্বীপ হানিমুন</a></li>
+            <li><a href="#packages">থাইল্যান্ড ও মালয়েশিয়া</a></li>
+            <li><a href="#packages">ইউরোপ ও ওমরাহ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>অফিস ও যোগাযোগ</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>বাড়ি #১২, রোড #০৪, বনানী / গুলশান, ঢাকা-১২১৩, বাংলাদেশ</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+880 1700-000000 (হটলাইন ও হোয়াটসঅ্যাপ)</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@sadiktours.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; ২০২৬ Sadik Tours &amp; Travels (sadiktours.com). সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>বিশ্বস্ততা ও পেশাদারিত্বের সাথে বিশ্ব ভ্রমণ</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking & Inquiry Modal -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeBookingModal()" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span class="section-tag" style="margin-bottom: 8px;">দ্রুত বুকিং ও ইনকোয়ারি</span>
+      <h3 class="modal-title" id="modalTitle">ট্যুর প্যাকেজ বুকিং</h3>
+      <p class="modal-sub">নিচের তথ্যগুলো দিন, আমাদের টিম সরাসরি হোয়াটসঅ্যাপে বা কলে আপনার সাথে যোগাযোগ করবে।</p>
+
+      <form class="modal-form" id="bookingModalForm">
+        <input type="hidden" id="modalPackageInput" />
+
+        <div class="form-group">
+          <label for="custName">আপনার নাম *</label>
+          <input type="text" id="custName" class="form-control" placeholder="যেমন: মোঃ আরিফুর রহমান" required />
+        </div>
+
+        <div class="form-group">
+          <label for="custPhone">মোবাইল / হোয়াটসঅ্যাপ নম্বর *</label>
+          <input type="tel" id="custPhone" class="form-control" placeholder="017XXXXXXXX" required />
+        </div>
+
+        <div class="form-group">
+          <label for="custTravelers">ভ্রমণকারীর সংখ্যা</label>
+          <input type="number" id="custTravelers" class="form-control" value="2" min="1" max="50" />
+        </div>
+
+        <div class="form-group">
+          <label for="custNote">অতিরিক্ত কোনো তথ্য বা প্রশ্ন (ঐচ্ছিক)</label>
+          <textarea id="custNote" class="form-control" rows="2" placeholder="ভ্রমণের সম্ভাব্য তারিখ বা বিশেষ কোনো চাহিদা থাকলে লিখুন..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 13px;">
+          <i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপে ইনকোয়ারি পাঠান
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a
+    href="https://wa.me/8801700000000?text=আসসালামু%20আলাইকুম%20সাদিক%20ট্যুরস%2C%20আমি%20ট্যুর%20প্যাকেজ%20সম্পর্কে%20জানতে%20চাই।"
+    target="_blank"
+    rel="noopener"
+    class="floating-wa"
+    title="হোয়াটসঅ্যাপে কথা বলুন"
+    aria-label="WhatsApp Chat"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
